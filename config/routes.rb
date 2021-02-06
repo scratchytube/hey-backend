@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 namespace :api do
   namespace :api do
-    resources :user
+    resources :users
     resources :bios
     resources :pictures
-    resources :profile
+    resources :profiles
     end
   end
 end

@@ -41,25 +41,17 @@ end
 bios = [
     {
         typeOfPrompt: "funny",
-         snippets:  {
-            "first": Faker::Quote.most_interesting_man_in_the_world,
-            "second": Faker::Quote.yoda,
-            "third": Faker::Quote.singular_siegler
-        }},
+         snippets:  Faker::Quote.most_interesting_man_in_the_world
+            },
         {
         typeOfPrompt: "serious",
-         snippets:  {
-            "first": Faker::Quotes::Shakespeare.romeo_and_juliet_quote,
-            "second": Faker::Quotes::Shakespeare.king_richard_iii_quote,
-            "third": Faker::Quotes::Shakespeare.hamlet_quote 
-            }},
-            {
+         snippets: Faker::Quotes::Shakespeare.romeo_and_juliet_quote
+            
+            },
+        {
         typeOfPrompt: "poetic",
-         snippets: {
-            "first": Faker::Music::Prince.lyric,
-            "second": Faker::Music::Prince.song,
-            "third": Faker::Music::Prince.band
-                    }}
+         snippets: Faker::Music::Prince.lyric
+            }
     ]
 
     puts 'bios? why not'

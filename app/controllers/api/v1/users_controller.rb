@@ -29,7 +29,7 @@ class Api::V1::UsersController < ApplicationController
     private 
 
     def user_params
-        params.require(:name, :username, :password)
+        params.require(:name, :username, :password , :bios, :pictures)
     end
 
 end

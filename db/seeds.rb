@@ -24,11 +24,11 @@ users = [
         username: "scratchytube",
         password: "12345"
     },
-    {
-        name: "mario",
-        username: "tazaryoot",
-        password: "chumean"
-    }
+    # {
+    #     name: "mario",
+    #     username: "tazaryoot",
+    #     password: "chumean"
+    # }
 ]
 
 puts 'sure ill make some users'
@@ -68,7 +68,7 @@ bios = [
     # ]
 
     4.times do
-        Picture.create(templates: Faker::LoremFlickr.image(size: "50x60", search_terms: ['sports', 'fitness']), completed_pictures: Faker::LoremPixel.image)
+        Picture.create(templates: Faker::LoremFlickr.image(size: "50x60", search_terms: ['sports', 'fitness']), completed_pictures: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/15/18/tiger-king.jpg')
     end
 
     
@@ -79,6 +79,6 @@ bios = [
     #     picture_id: Picture.all.sample.id
     # ]
 
-    2.times do 
+    1.times do 
         Profile.create!(user_id: User.all.sample.id, bio_id: Bio.all.sample.id, picture_id: Picture.all.sample.id)
     end
